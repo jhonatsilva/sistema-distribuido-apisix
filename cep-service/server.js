@@ -23,6 +23,8 @@ app.get('/cep/:cep', async (req, res) => {
 
 });
 
-app.listen(3002, () => {
-    console.log('CEP Service rodando na porta 3002');
+const PORT = process.env.PORT || 3002;
+
+app.listen(PORT, () => {
+    console.log(`CEP Service rodando na porta ${PORT}`);
 });
