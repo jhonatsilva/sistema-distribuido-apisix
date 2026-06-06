@@ -1,0 +1,9 @@
+{
+  "uri": "/cnpj/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "host.docker.internal:3001": 1
+    }
+  }
+}

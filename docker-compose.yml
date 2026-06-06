@@ -1,0 +1,15 @@
+services:
+
+  cnpj-service:
+    build:
+      context: ./cnpj-service
+    container_name: cnpj-service
+    ports:
+      - "3001:3001"
+
+  cep-service:
+    build:
+      context: ./cep-service
+    container_name: cep-service
+    ports:
+      - "3002:3002"

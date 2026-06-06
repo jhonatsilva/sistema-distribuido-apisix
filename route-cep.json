@@ -1,0 +1,9 @@
+{
+  "uri": "/cep/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "host.docker.internal:3002": 1
+    }
+  }
+}
